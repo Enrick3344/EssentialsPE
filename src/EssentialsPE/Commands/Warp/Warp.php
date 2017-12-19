@@ -60,7 +60,7 @@ class Warp extends BaseCommand{
             return false;
         }
         $player->teleport($warp);
-        $player->sendMessage(TextFormat::GREEN . "Warping to " . TextFormat::AQUA . $warp->getName() . TextFormat::GREEN . "...");
+        $player->sendMessage("§l§5>§r§d You've Warped to §b" . $warp->getName());
         if($player !== $sender){
             $sender->sendMessage(TextFormat::GREEN . "Warping " . TextFormat::YELLOW . $player->getDisplayName() . TextFormat::GREEN . " to " . TextFormat::AQUA . $warp->getName() . TextFormat::GREEN . "...");
         }
